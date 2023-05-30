@@ -1,19 +1,39 @@
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SUPER KURS</title>
-    <link rel="stylesheet" href="css/login.css" />
-  </head>
-  <body>
-    <div id="header">
-
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Zaloguj się!</title>
+    <link rel="stylesheet" href="css/login.css"/>
+</head>
+<body>
+<div class="left-section">
+    <div class="container">
+        <h2>Logowanie</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" required>
+                <div id="email-error" class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <label for="password">Hasło:</label>
+                <input type="password" id="password" required>
+                <div id="password-error" class="error-message"></div>
+                <div id="password-strength" class="password-strength"></div>
+            </div>
+            <button type="submit" class="btn btn-login">Zaloguj się</button>
+            <button type="button" class="btn btn-register">Zarejestruj się</button>
+        </form>
     </div>
-    <div id="container">
-      <h1 class="hello">Zaloguj się</h1>
+</div>
+<div class="right-section">
+    <img class="background-image" src="images/login_background_image.webp" alt="Background Image">
+    <div class="background-text">
+        <h1>Zaloguj się i rozpocznij swoją <span class="glow_effect">programistyczną</span> podróż!</h1>
     </div>
-
-    <div id="footer"></div>
-  </body>
+</div>
+<script src="script/emailandpasswordvalidation.js"></script>
+</body>
 </html>
