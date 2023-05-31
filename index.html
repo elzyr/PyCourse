@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Strona Główna</title>
+    <link rel="stylesheet" href="css/main_page.css"/>
+</head>
+<body>
+
+<div class="navbar-container">
+    <div class="navbar">
+        <a class="logo" href="#home">
+            <img src="logo.png" alt="Logo" height="40">
+        </a>
+        <a href="#about">O nas</a>
+        <a href="#benefits">Benefity</a>
+        <a href="#apply">Aplikuj</a>
+        <a href="login.html">Logowanie</a>
+    </div>
+</div>
+
+<!-- Slider Zdjęć -->
+<div class="slider">
+    <div class="slide active">
+        <img src="images/slide1.jpg" alt="Slide 1">
+    </div>
+    <div class="slide">
+        <img src="images/slide2.jpg" alt="Slide 2">
+    </div>
+    <div class="slide">
+        <img src="images/slide3.jpg" alt="Slide 3">
+    </div>
+</div>
+<div class="course-section">
+    <div class="course-images">
+        <figure>
+            <img class="course-image" src="images/image1.jpg" alt="Course Image 1">
+            <figcaption class="course-caption">Opis zdjęcia 1</figcaption>
+        </figure>
+        <figure>
+            <img class="course-image" src="images/image2.jpg" alt="Course Image 2">
+            <figcaption class="course-caption">Opis zdjęcia 2</figcaption>
+        </figure>
+        <figure>
+            <img class="course-image" src="images/image3.jpg" alt="Course Image 3">
+            <figcaption class="course-caption">Opis zdjęcia 3</figcaption>
+        </figure>
+    </div>
+    <p class="course-description">Opis kursu Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis, urna sed accumsan sodales, sapien nisi vulputate justo, eu hendrerit ligula sapien vel orci.</p>
+</div>
+
+<script>
+    // JavaScript
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide() {
+        slides.forEach((slide, index) => {
+            if (index === currentSlide) {
+                slide.classList.add('active');
+            } else {
+                slide.classList.remove('active');
+            }
+        });
+    }
+
+    function nextSlide() {
+        currentSlide++;
+        if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        }
+        showSlide();
+    }
+
+    setInterval(nextSlide, 3000); // Automatyczne przejście do następnego slajdu co 3 sekundy
+</script>
+
+<div id="container">
+
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="footer">
+    <p>&copy; 2023 Moja Strona Internetowa. Wszelkie prawa zastrzeżone.</p>
+</div>
+</body>
+
+
+
+</html>
