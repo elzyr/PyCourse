@@ -58,14 +58,8 @@ document.getElementById("login-form").addEventListener("submit", function(event)
         passwordStrengthElement.classList.remove("weak", "strong");
         passwordStrengthElement.classList.add("medium");
         passwordStrengthElement.textContent = "Średnie hasło";
-    } else {
-        passwordStrengthElement.classList.remove("weak", "medium");
-        passwordStrengthElement.classList.add("strong");
-        passwordStrengthElement.textContent = "Mocne hasło";
     }
-});
-
-// Obsługa przycisku "Zarejestruj się"
-document.querySelector(".btn-register").addEventListener("click", function() {
-    console.log("Przekierowanie do strony rejestracji...");
+    else{
+        location.href = "index.html";
+    }
 });
