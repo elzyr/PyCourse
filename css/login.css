@@ -40,7 +40,26 @@ body {
     justify-content: center;
     padding: 20px;
 }
+.home-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: red;
+    text-decoration: none;
+}
 
+.home-link {
+    margin-right: 5px;
+    margin-top: -7%;
+    color: var(--main-color);
+    font-family: Rubik-Light;
+}
+.arrow_left{
+    padding-right: 10px;
+}
+.home-link:hover {
+    text-decoration: underline;
+}
 .right-section {
     width: 50%;
     position: relative;
