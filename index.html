@@ -9,13 +9,24 @@
 </head>
 <body>
 
-<div class="navbar-container">
-    <div class="navbar">
+<div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
         <a class="logo" href="#home">
-            <img src="images/logo.png" alt="Logo" height="80">
+            <img src="images/logo.png" alt="Logo">
         </a>
+    </div>
+    <div class="nav-btn">
+        <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+
+    <div class="nav-links">
         <a onclick="scrollToDiv('.about-us-section')">O nas</a>
-        <a onclick="scrollToDiv('.about-course-section')" >O kursie</a>
+        <a onclick="scrollToDiv('.about-course-section')">O kursie</a>
         <a onclick="scrollToDiv('.benefits')">Benefity</a>
         <a href="#apply">Aplikuj</a>
         <a href="login.html">Logowanie</a>
