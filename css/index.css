@@ -14,26 +14,54 @@
     --background-color: #23374D;
     --secondary-color: #E5E5E5;
     --bonus-color: #EEEEEE;
+    --bgcolor1: #8EC7D2;
+    --bgcolor2: #26a69a;
+    --bgcolor3: #4192d9;
+    --bgcolor4: #8EC7D2;
+    --bgcolor5: #26a69a;
+    --bgcolor6: #EEEEEE;
+    --bgbutton: #23374D;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: Rubik, sans-serif;
 }
 
+body > * {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+h3 {
+    color: var(--background-color);
+    font-size: 25px;
+    font-family: Rubik-Bold, sans-serif;
+}
+
+p {
+    color: var(--background-color);
+    font-size: 20px;
+    font-family: Rubik-Bold, sans-serif;
+}
 
 .nav {
+    padding-top: 0;
+    padding-bottom: 0;
     position: fixed;
     z-index: 1000;
     height: 50px;
     top: 0;
     width: 100%;
+    font-family: Rubik-Bold, sans-serif;
     background-color: var(--background-color);
 }
-.nav img{
+
+.nav img {
     height: 100%;
 }
+
 .nav > .nav-header {
     display: inline;
 }
@@ -152,11 +180,12 @@ body {
 
 
 .about-course-section {
+    background-color: var(--bgcolor1); /* tło */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     text-align: center;
 }
 
@@ -194,8 +223,8 @@ body {
 
 .footer {
     font-family: Rubik-Bold, sans-serif;
-    background-color: #333;
     color: #fff;
+    background-color: #333;
     padding: 20px 0;
     font-size: 16px;
     text-align: center;
@@ -234,15 +263,19 @@ body {
 }
 
 .footer-text {
+    color: white;
+    font-size: 16px;
     margin-top: 15px;
 }
 
 .about-us-section {
+    background-color: var(--bgcolor3); /* tło */
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     text-align: center;
 }
 
@@ -279,11 +312,13 @@ body {
 }
 
 .recommend-us-section {
+    background-color: var(--bgcolor4); /* tło */
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     text-align: center;
 }
 
@@ -315,17 +350,20 @@ body {
 }
 
 .recommend-us-caption {
+    font-family: Rubik-Bold, sans-serif;
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .sponsors-section {
+    background-color: var(--bgcolor6); /* tło */
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     text-align: center;
 }
 
@@ -352,6 +390,7 @@ body {
 }
 
 .benefits {
+    background-color: var(--bgcolor2); /* tło */
     text-align: center;
 }
 
@@ -469,3 +508,71 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.qna {
+    max-width: 100%;
+    background-color: var(--bgcolor5); /* tło */
+}
+
+.qna-section {
+    max-width: 600px;
+    margin: 0 auto;
+    /*padding: 20px;*/
+}
+
+.qna-section h2 {
+    text-align: center;
+}
+
+.question {
+    /*margin-bottom: 20px;*/
+    padding-bottom: 20px;
+}
+
+.qna-section h3 {
+    margin-bottom: 10px;
+}
+
+.qna-section p {
+    margin: 0;
+}
+
+.qna-section h1, h2 {
+    margin: 0;
+    font-family: Rubik-Bold, sans-serif;
+    text-align: center;
+    font-size: 36px;
+    color: var(--background-color);
+}
+
+.qna-section h2 {
+    font-size: 24px;
+}
+
+.button-container {
+    background-color: var(--bgbutton);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+.apply-button {
+    padding: 30px 70px;
+    font-size: 32px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.apply-button:hover {
+    background: #45a049 linear-gradient(to bottom, #4CAF50 5%, #45a049 100%);
+}
+
+.apply-button:active {
+    position:relative;
+    top:1px;
+}
+
