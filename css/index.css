@@ -8,6 +8,11 @@
     src: url(../fonts/Rubik-Italic.ttf);
 }
 
+@font-face {
+    font-family: Rubik-Regular;
+    src: url(../fonts/Rubik-Regular.ttf);
+}
+
 /*root to takie zmienne w css XD*/
 :root {
     --main-color: #1089FF;
@@ -26,12 +31,12 @@
 body {
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 body > * {
     padding-top: 50px;
     padding-bottom: 50px;
-    text-align: center;
 }
 
 h3 {
@@ -56,6 +61,7 @@ p {
     width: 100%;
     font-family: Rubik-Bold, sans-serif;
     background-color: var(--background-color);
+    text-align: left !important;
 }
 
 .nav img {
@@ -91,7 +97,7 @@ p {
     display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 635px) {
     .nav > .nav-btn {
         display: inline-block;
         position: absolute;
@@ -206,7 +212,7 @@ p {
 .about-course-image {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     object-fit: cover;
     margin: 0 10px;
 }
@@ -294,8 +300,8 @@ p {
 }
 
 .about-us-image {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     margin: 0 10px;
@@ -337,8 +343,8 @@ p {
 }
 
 .recommend-us-image {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     margin: 0 10px;
@@ -350,7 +356,7 @@ p {
 }
 
 .recommend-us-caption {
-    font-family: Rubik-Bold, sans-serif;
+    font-family: Rubik-Regular, sans-serif;
     margin-top: 10px;
     font-size: 20px;
 }
@@ -416,7 +422,7 @@ p {
 }
 
 .benefit img {
-    width: 250px;
+    width: 180px;
     height: auto;
     margin: 0 auto;
 }
