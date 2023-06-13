@@ -64,6 +64,10 @@ body {
     color: var(--main-color);
     font-family: Rubik-Light;
 }
+.container-register .home-link{
+    margin-top: 0%;
+
+}
 .arrow_left{
     padding-right: 10px;
     transition: 0.5s;
@@ -126,11 +130,25 @@ body {
     transition: 0.75s ease;
 }
 
+.container-register {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    transition: 0.75s ease;
+}
+
 .container:hover {
     margin-top: -1%;
     -webkit-box-shadow: 0px 0px 41px 2px rgba(58, 89, 119, 1);
     -moz-box-shadow: 0px 0px 41px 2px rgba(58, 89, 119, 1);
     box-shadow: 0px 0px 41px 2px rgba(58, 89, 119, 1);
+}
+.gender-options label {
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .container h2 {

@@ -15,27 +15,63 @@
     </div>
 </div>
 <div class="left-section">
-  <div class="container">
-    <a href="index.html" class="home-link">
-      <div class="arrow_left">&#8592;</div>
-      Powrót do strony głównej</a>
-    <h2>Przygoda czeka!</h2>
-    <form id="login-form">
-      <div class="form-group">
-        <label for="email">E-mail:</label>
-        <input type="text" id="email" required>
-        <div id="email-error" class="error-message"></div>
-      </div>
-      <div class="form-group">
-        <label for="password">Hasło:</label>
-        <input type="password" id="password" required>
-        <div id="password-error" class="error-message"></div>
-        <div id="password-strength" class="password-strength"></div>
-      </div>
-      <button type="submit" class="btn btn-login">Rozpocznij naukę!</button>
-      <a href="login.html"><button type="button" class="btn btn-register">Masz już konto? Zaloguj się!</button></a>
-    </form>
-  </div>
+    <div class="container container-register">
+        <a href="index.html" class="home-link">
+            <div class="arrow_left">&#8592;</div>
+            Powrót do strony głównej</a>
+        <h2>Przygoda czeka!</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" required>
+                <div id="email-error" class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <label for="password">Hasło:</label>
+                <input type="password" id="password" required>
+                <div id="password-error" class="error-message"></div>
+                <div id="password-strength" class="password-strength"></div>
+            </div>
+            <div class="form-group">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="surname">Nazwisko:</label>
+                <input type="text" id="surname" required>
+            </div>
+            <div class="form-group">
+                <label>Płeć:</label>
+                <div class="gender-options">
+                    <label>
+                        <input type="radio" name="gender" value="male" required>
+                        Mężczyzna
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        Kobieta
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="dob">Data urodzenia:</label>
+                <input type="date" id="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="university">Nazwa uczelni:</label>
+                <input type="text" id="university" required>
+            </div>
+            <button type="submit" class="btn btn-login">Rozpocznij naukę!</button>
+            <a href="login.html"><button type="button" class="btn btn-register">Masz już konto? Zaloguj się!</button></a>
+        </form>
+    </div>
+
+    <script>
+        var dobInput = document.getElementById("dob");
+        var currentDate = new Date().toISOString().split("T")[0];
+        dobInput.setAttribute("max", currentDate);
+    </script>
+
 </div>
 <script src="script/emailandpasswordvalidation.js"></script>
 </body>
