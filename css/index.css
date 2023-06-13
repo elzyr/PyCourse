@@ -223,8 +223,11 @@ p {
 }
 
 .about-course-caption {
-    margin-top: 10px;
-    font-size: 14px;
+    font-size: 20px;
+    font-family: Rubik-Regular;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer {
@@ -562,6 +565,7 @@ p {
     align-items: center;
     height: 10vh;
 }
+
 .apply-button {
     padding: 30px 70px;
     font-size: 32px;
@@ -578,7 +582,48 @@ p {
 }
 
 .apply-button:active {
-    position:relative;
-    top:1px;
+    position: relative;
+    top: 1px;
 }
 
+.about-course-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-course-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-course-section figure {
+    display: flex;
+    flex-basis: 100%;
+}
+
+.about-course-section figure:nth-child(odd) {
+    flex-direction: row;
+}
+
+.about-course-section figure:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 800px) {
+    .about-course-section figure {
+        flex-direction: column !important;
+    }
+
+    .about-course-section figure img,
+    .about-course-section figcaption {
+        width: 100%;
+    }
+
+    .about-course-section figure img {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        height: auto;
+
+    }
+}
