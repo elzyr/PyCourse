@@ -469,3 +469,36 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.qna-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.qna-section h2 {
+    text-align: center;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.qna-section h3 {
+    margin-bottom: 10px;
+}
+
+.qna-section p {
+    margin: 0;
+}
+
+.qna-section h1, h2 {
+    font-family: Rubik-Bold, sans-serif;
+    text-align: center;
+    font-size: 36px;
+    color: var(--background-color);
+}
+
+.qna-section h2 {
+    font-size: 24px;
+}
