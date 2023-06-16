@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Szkoła letnia - PyCourse</title>
     <link rel="stylesheet" href="css/index.css"/>
@@ -25,15 +26,25 @@
     </div>
 
     <div class="nav-links">
-        <a onclick="scrollToDiv('.about-us-section')">O nas</a>
         <a onclick="scrollToDiv('.about-course-section')">O kursie</a>
+        <a onclick="scrollToDiv('.about-us-section')">Mentorzy</a>
         <a onclick="scrollToDiv('.benefits')">Benefity</a>
-        <a href="register.html">Aplikuj</a>
-        <a href="login.html">Logowanie</a>
+        <a onclick="scrollToDiv('.register')">Aplikuj</a>
         <a onclick="scrollToDiv('.qna-section')">Pytania</a>
     </div>
 </div>
+<script>
+    var navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            var navCheck = document.getElementById('nav-check');
+            if (navCheck.checked) {
+                navCheck.checked = false;
+            }
+        });
+    });
 
+</script>
 <!-- Slider Zdjęć -->
 <div class="slider">
     <div class="slide active">
@@ -68,7 +79,7 @@
         </figure>
         <figure>
             <img class="about-course-image" src="images/kurs2.png" alt="Course Image 2">
-            <figcaption class="about-course-caption"> Program kursu:
+            <figcaption class="about-course-caption"> Program kursu:<br>
                 Kurs złożony będzie z działów, w każdym przygowane są zadania o różnym poziomie trudności.
                 Uczestnicy będą mieli określony czas na ukończenie działu, w przeciwnym wypadku będą naliczane punkty
                 karne,
@@ -97,7 +108,24 @@
         Własny sprzęt do kodowania z zainstalowyanym oprogramowaniem Python oraz edytorem tekstu.
     </p>
 </div>
-
+<!-- Nasi mentorzy -->
+<div class="about-us-section">
+    <h2>Nasi mentorzy</h2>
+    <div class="about-us-images">
+        <figure>
+            <img class="about-us-image" src="images/mentor1.webp" alt="Course Image 1">
+            <figcaption class="about-us-caption"><b>Marcin</b> to doświadczony programista Python. Jego główne obszary ekspertyzy to tworzenie oprogramowania w języku Python oraz zarówno backend, jak i frontend aplikacji. Jest kreatywny i skrupulatny w pracy. Zawsze gotowy do pomocy w rozwiązywaniu problemów i dzielenia się swoją wiedzą programistyczną.</figcaption>
+        </figure>
+        <figure>
+            <img class="about-us-image" src="images/mentor2.webp" alt="Course Image 2">
+            <figcaption class="about-us-caption"><b>Robert</b> jest specjalistą w dziedzinie baz danych. Ma bogate doświadczenie w projektowaniu i tworzeniu baz danych oraz optymalizacji zapytań. W kursie z Pythona pomoże w zrozumieniu sposobu integracji Pythona z bazami danych i udzieli praktycznych wskazówek dotyczących efektywnego korzystania z baz danych.</figcaption>
+        </figure>
+        <figure>
+            <img class="about-us-image" src="images/mentor3.webp" alt="Course Image 3">
+            <figcaption class="about-us-caption"><b>Wiktoria</b> to specjalistka w sprzedaży technologii z głębokim zrozumieniem Pythona. Pomocą będzie w tłumaczeniu skomplikowanych koncepcji programowania na przystępne dla początkujących wyjaśnienia. Jej umiejętności komunikacyjne oraz zdolność do budowania relacji sprawią, że kursanci poczują się pewniej i zmotywowani w swojej nauce Pythona.</figcaption>
+        </figure>
+    </div>
+</div>
 <!-- Benefity -->
 
 <div class="benefits">
@@ -143,37 +171,6 @@
     </div>
 </div>
 
-
-<!-- O Nas -->
-<div class="about-us-section">
-    <h2>O nas</h2>
-    <div class="about-us-images">
-        <figure>
-            <img class="about-us-image" src="images/mentor1.webp" alt="Course Image 1">
-            <figcaption class="about-us-caption">Opis zdjęcia 1</figcaption>
-        </figure>
-        <figure>
-            <img class="about-us-image" src="images/mentor2.webp" alt="Course Image 2">
-            <figcaption class="about-us-caption">Opis zdjęcia 2</figcaption>
-        </figure>
-        <figure>
-            <img class="about-us-image" src="images/mentor3.webp" alt="Course Image 3">
-            <figcaption class="about-us-caption">Opis zdjęcia 3</figcaption>
-        </figure>
-    </div>
-    <p class="about-us-description">Jesteśmy firmą zajmującą się kursami programowania w językach takich jak: Python, C,
-        C#.
-        Od wielu lat zajmujemy się szkoleniem programistów i poganiu im w samorozwoju.
-        Nasz zespół składa się z wykwalifikowanych i doświadczonych instruktorów,
-        którzy posiadają głęboką wiedzę z zakresu programowania i specjalizują się w
-        języku Python. Nasi instruktorzy są pasjonatami programowania i mają zdolność
-        przekazywania wiedzy w sposób przystępny i interesujący.
-        W naszej szkole letniej stawiamy nacisk na praktyczne aspekty nauki. Oprócz teoretycznych wykładów,
-        nasi uczestnicy mają możliwość bezpośredniego zastosowania zdobytej wiedzy w praktyce
-        poprzez realizację projektów programistycznych. To umożliwia uczestnikom zrozumienie realnych
-        zastosowań Pythona i rozwinięcie umiejętności rozwiązywania problemów.</p>
-</div>
-
 <!-- Polecający -->
 <div class="recommend-us-section">
     <h2>Polecają nas</h2>
@@ -208,7 +205,7 @@
 <!-- Przycisk -->
 
 <div class="button-container">
-    <button class="apply-button" onclick="window.location.href='register.html'">Aplikuj</button>
+    <button class="apply-button" onclick="window.location.href='#aplikuj'">Aplikuj</button>
 </div>
 
 
@@ -253,7 +250,7 @@
                 <h2>Czy istnieje certyfikat ukończenia kursu?</h2>
             </div>
             <div class="question-content">
-                <p>Tak, po ukończeniu kursu uczesnicy dostaną certyfikat potwierdzony przez naszych sponsorów i
+                <p><b>Tak</b>, po ukończeniu kursu uczesnicy dostaną certyfikat potwierdzony przez naszych sponsorów i
                     mentorów.</p>
             </div>
         </div>
@@ -262,7 +259,7 @@
                 <h2>Czy kurs jest płatny?</h2>
             </div>
             <div class="question-content">
-                <p>Nie, nasz kurs jest całkowicie bezpłatny.</p>
+                <p><b>Nie</b>, nasz kurs jest całkowicie bezpłatny.</p>
             </div>
         </div>
         <div class="question">
@@ -275,6 +272,13 @@
         </div>
     </div>
 </div>
+
+<div class="register" id="aplikuj">
+    <object data="register.html" width="100%" height="100%">
+        Twoja przeglądarka nie obsługuje elementu object.
+    </object>
+</div>
+
 <!-- Sponsorzy -->
 <div class="sponsors-section">
     <h2>Sponsorzy</h2>
@@ -305,7 +309,7 @@
         <div class="footer-content">
             <ul class="footer-links">
                 <li><a onclick="scrollToDiv('.nav')">Strona główna</a></li>
-                <li><a onclick="scrollToDiv('.about-us-section')">O nas</a></li>
+                <li><a onclick="scrollToDiv('.about-us-section')">Mentorzy</a></li>
                 <li><a onclick="scrollToDiv('.benefits')">Oferta</a></li>
                 <!--                <li><a href="#">Kontakt</a></li>-->
             </ul>

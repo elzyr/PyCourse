@@ -19,13 +19,13 @@
     --background-color: #23374D;
     --secondary-color: #E5E5E5;
     --bonus-color: #EEEEEE;
-    --bgcolor1: #8EC7D2;
-    --bgcolor2: #26a69a;
-    --bgcolor3: #4192d9;
-    --bgcolor4: #8EC7D2;
-    --bgcolor5: #26a69a;
-    --bgcolor6: #EEEEEE;
-    --bgbutton: #23374D;
+    --bgcolor1: #5087B7;
+    --bgcolor2: #5C92BF;
+    --bgcolor3: #679DCA;
+    --bgcolor4: #73A8D2;
+    --bgcolor5: #7EB3DD;
+    --bgcolor6: #8ACFE7;
+    --bgbutton: #95DAF2;
 }
 
 body {
@@ -94,6 +94,7 @@ p {
 }
 
 .nav > #nav-check {
+    height: 50px;
     display: none;
 }
 
@@ -112,9 +113,6 @@ p {
         padding: 13px;
     }
 
-    .nav > .nav-btn > label:hover, .nav #nav-check:checked ~ .nav-btn > label {
-        background-color: rgba(0, 0, 0, 0.3);
-    }
 
     .nav > .nav-btn > label > span {
         display: block;
@@ -124,6 +122,7 @@ p {
     }
 
     .nav > .nav-links {
+        overflow: hidden;
         position: absolute;
         display: block;
         width: 100%;
@@ -198,8 +197,8 @@ p {
 .about-course-section h2 {
     font-family: Rubik-Bold, sans-serif;
     text-align: center;
+    color: white;
     font-size: 36px;
-    color: var(--background-color);
 }
 
 .about-course-images {
@@ -210,6 +209,7 @@ p {
 }
 
 .about-course-image {
+    filter: invert(1);
     width: 200px;
     height: 200px;
     /*border-radius: 50%;*/
@@ -224,10 +224,12 @@ p {
 
 .about-course-caption {
     font-size: 20px;
+    color:white;
     font-family: Rubik-Regular;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-shadow: 0px 0px 7px rgba(66, 68, 90, 1);
 }
 
 .footer {
@@ -278,7 +280,11 @@ p {
 }
 
 .about-us-section {
-    background-color: var(--bgcolor3); /* tło */
+    background: rgb(103,157,202);
+    background: -moz-linear-gradient(180deg, rgba(103,157,202,1) 90%, rgba(92,146,191,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(103,157,202,1) 90%, rgba(92,146,191,1) 100%);
+    background: linear-gradient(180deg, rgba(103,157,202,1) 90%, rgba(92,146,191,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#679dca",endColorstr="#5c92bf",GradientType=1);
 
     display: flex;
     justify-content: center;
@@ -317,11 +323,16 @@ p {
 
 .about-us-caption {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 20px;
+    font-family: Rubik-Regular;
 }
 
 .recommend-us-section {
-    background-color: var(--bgcolor4); /* tło */
+    background: rgb(115,168,210);
+    background: -moz-linear-gradient(360deg, rgba(115,168,210,1) 90%, rgba(92,146,191,1) 100%);
+    background: -webkit-linear-gradient(360deg, rgba(115,168,210,1) 90%, rgba(92,146,191,1) 100%);
+    background: linear-gradient(360deg, rgba(115,168,210,1) 90%, rgba(92,146,191,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#73a8d2",endColorstr="#5c92bf",GradientType=1);
 
     display: flex;
     justify-content: center;
@@ -537,7 +548,9 @@ p {
     /*margin-bottom: 20px;*/
     padding-bottom: 20px;
 }
-
+.question-content p{
+    font-family: Rubik-Regular !important;
+}
 .qna-section h3 {
     margin-bottom: 10px;
 }
@@ -569,7 +582,7 @@ p {
 .apply-button {
     padding: 30px 70px;
     font-size: 32px;
-    background-color: #4CAF50;
+    background-color: #23374D;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -578,7 +591,7 @@ p {
 }
 
 .apply-button:hover {
-    background: #45a049 linear-gradient(to bottom, #4CAF50 5%, #45a049 100%);
+    background-color: #5087B7;
 }
 
 .apply-button:active {
@@ -590,7 +603,9 @@ p {
     display: flex;
     flex-direction: column;
 }
-
+.about-course-section p{
+    color: darkred;
+}
 .about-course-images {
     display: flex;
     flex-wrap: wrap;
@@ -626,4 +641,10 @@ p {
         height: auto;
 
     }
+}
+
+.register{
+    height: 60em;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
