@@ -1,4 +1,3 @@
-// JavaScript
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
 
@@ -20,9 +19,9 @@ function nextSlide() {
     showSlide();
 }
 
-setInterval(nextSlide, 3000); // Automatyczne przejście do następnego slajdu co 3 sekundy
+setInterval(nextSlide, 3000);
 
-// JavaScript
+
 const slides2 = document.querySelectorAll('.slide2');
 let currentSlide2 = 0;
 
@@ -44,5 +43,5 @@ function nextSlide2() {
     showSlide2();
 }
 
-setInterval(nextSlide2, 3000); // Automatyczne przejście do następnego slajdu co 3 sekundy
+setInterval(nextSlide2, 3000);
 
