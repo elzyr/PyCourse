@@ -408,19 +408,19 @@ p {
     margin: 0 10px;
 }
 
-.benefits {
+.benefits-container {
     background-color: var(--bgcolor2); /* tło */
     text-align: center;
 }
 
-.benefits h2 {
+.benefits-container h2 {
     font-family: Rubik-Bold, sans-serif;
     text-align: center;
     font-size: 36px;
     color: var(--background-color);
 }
 
-.benefit-grid {
+.benefits {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -523,7 +523,7 @@ p {
         margin-bottom: 10px;
     }
 
-    .benefit-grid {
+    .benefits {
         grid-template-columns: repeat(2, 1fr);
     }
 }
