@@ -147,8 +147,6 @@ p {
     }
 }
 
-
-/* Stylowanie slidera */
 .slider-container {
     margin-top: 50px;
     width: 100%;
@@ -183,12 +181,11 @@ p {
 
 
 .course-information-container {
-    background-color: var(--bgcolor1); /* tło */
+    background-color: var(--bgcolor1);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /*margin-top: 20px;*/
     text-align: center;
 }
 
@@ -210,7 +207,6 @@ p {
     filter: invert(1);
     width: 200px;
     height: 200px;
-    /*border-radius: 50%;*/
     object-fit: cover;
     margin: 0 10px;
 }
@@ -222,7 +218,7 @@ p {
 
 .course-information-text {
     font-size: 20px;
-    color:white;
+    color: white;
     font-family: Rubik-Regular;
     display: flex;
     align-items: center;
@@ -278,17 +274,16 @@ p {
 }
 
 .mentors-container {
-    background: rgb(103,157,202);
-    background: -moz-linear-gradient(180deg, rgba(103,157,202,1) 90%, rgba(92,146,191,1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(103,157,202,1) 90%, rgba(92,146,191,1) 100%);
-    background: linear-gradient(180deg, rgba(103,157,202,1) 90%, rgba(92,146,191,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#679dca",endColorstr="#5c92bf",GradientType=1);
+    background: rgb(103, 157, 202);
+    background: -moz-linear-gradient(180deg, rgba(103, 157, 202, 1) 90%, rgba(92, 146, 191, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(103, 157, 202, 1) 90%, rgba(92, 146, 191, 1) 100%);
+    background: linear-gradient(180deg, rgba(103, 157, 202, 1) 90%, rgba(92, 146, 191, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#679dca", endColorstr="#5c92bf", GradientType=1);
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /*margin-top: 20px;*/
     text-align: center;
 }
 
@@ -326,11 +321,11 @@ p {
 }
 
 .recommendations-container {
-    background: rgb(115,168,210);
-    background: -moz-linear-gradient(360deg, rgba(115,168,210,1) 90%, rgba(92,146,191,1) 100%);
-    background: -webkit-linear-gradient(360deg, rgba(115,168,210,1) 90%, rgba(92,146,191,1) 100%);
-    background: linear-gradient(360deg, rgba(115,168,210,1) 90%, rgba(92,146,191,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#73a8d2",endColorstr="#5c92bf",GradientType=1);
+    background: rgb(115, 168, 210);
+    background: -moz-linear-gradient(360deg, rgba(115, 168, 210, 1) 90%, rgba(92, 146, 191, 1) 100%);
+    background: -webkit-linear-gradient(360deg, rgba(115, 168, 210, 1) 90%, rgba(92, 146, 191, 1) 100%);
+    background: linear-gradient(360deg, rgba(115, 168, 210, 1) 90%, rgba(92, 146, 191, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#73a8d2", endColorstr="#5c92bf", GradientType=1);
 
     display: flex;
     justify-content: center;
@@ -374,14 +369,13 @@ p {
 }
 
 .sponsors-container {
-    background-color: var(--bgcolor6); /* tło */
+    background-color: var(--bgcolor6);
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    /*margin-top: 20px;*/
     text-align: center;
 }
 
@@ -408,7 +402,7 @@ p {
 }
 
 .benefits-container {
-    background-color: var(--bgcolor2); /* tło */
+    background-color: var(--bgcolor2);
     text-align: center;
 }
 
@@ -439,7 +433,6 @@ p {
     margin: 0 auto;
 }
 
-/* Stylowanie slidera */
 .slider2-container {
     width: 100%;
     height: 400px;
@@ -529,13 +522,12 @@ p {
 
 .questions-container {
     max-width: 100%;
-    background-color: var(--bgcolor5); /* tło */
+    background-color: var(--bgcolor5);
 }
 
 .questions {
     max-width: 600px;
     margin: 0 auto;
-    /*padding: 20px;*/
 }
 
 .questions h2 {
@@ -543,12 +535,13 @@ p {
 }
 
 .question {
-    /*margin-bottom: 20px;*/
     padding-bottom: 20px;
 }
-.question-answer p{
+
+.question-answer p {
     font-family: Rubik-Regular !important;
 }
+
 .questions h3 {
     margin-bottom: 10px;
 }
@@ -601,9 +594,11 @@ p {
     display: flex;
     flex-direction: column;
 }
-.course-information-container p{
+
+.course-information-container p {
     color: darkred;
 }
+
 .course-information-images {
     display: flex;
     flex-wrap: wrap;
@@ -641,7 +636,7 @@ p {
     }
 }
 
-.register-container{
+.register-container {
     height: 60em;
     padding-top: 0;
     padding-bottom: 0;
