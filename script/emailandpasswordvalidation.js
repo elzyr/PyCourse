@@ -1,10 +1,8 @@
-// Walidacja adresu e-mail
 function validateEmail(email) {
     const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
     return emailRegex.test(email);
 }
 
-// Sprawdzanie siły hasła
 function checkPasswordStrength(password) {
     let strength = 0;
     if (password.length >= 8) {
@@ -22,8 +20,7 @@ function checkPasswordStrength(password) {
     return strength;
 }
 
-// Obsługa przycisku "Zaloguj się"
-document.getElementById("login-form").addEventListener("submit", function(event) {
+document.getElementById("login-form").addEventListener("submit", function (event) {
     event.preventDefault();
 
     const emailInput = document.getElementById("email");
@@ -31,18 +28,15 @@ document.getElementById("login-form").addEventListener("submit", function(event)
     const emailError = document.getElementById("email-error");
     const passwordError = document.getElementById("password-error");
 
-    // Resetowanie komunikatów o błędach
     emailError.textContent = "";
     passwordError.textContent = "";
 
-    // Walidacja adresu e-mail
     const email = emailInput.value.trim();
     if (!validateEmail(email)) {
         emailError.textContent = "Nieprawidłowy adres e-mail";
         return;
     }
 
-    // Sprawdzanie siły hasła
     const password = passwordInput.value;
     const passwordStrength = checkPasswordStrength(password);
     const passwordStrengthElement = document.getElementById("password-strength");
@@ -58,8 +52,5 @@ document.getElementById("login-form").addEventListener("submit", function(event)
         passwordStrengthElement.classList.remove("weak", "strong");
         passwordStrengthElement.classList.add("medium");
         passwordStrengthElement.textContent = "Średnie hasło";
-    }
-    else{
-        location.href = "index.html";
     }
 });

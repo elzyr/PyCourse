@@ -10,43 +10,32 @@
 </head>
 <body>
 
-<div class="nav">
-    <input type="checkbox" id="nav-check">
+<!-- Pasek Nawigacyjny -->
+<div class="navigation-container">
+    <input type="checkbox" id="navigation-click-check">
     <div class="nav-header">
-        <a class="logo" href="#home">
+        <a class="logo">
             <img src="images/logo.png" alt="Logo">
         </a>
     </div>
-    <div class="nav-btn">
-        <label for="nav-check">
+    <div class="navigation-buttons">
+        <label for="navigation-click-check">
             <span></span>
             <span></span>
             <span></span>
         </label>
     </div>
-
-    <div class="nav-links">
-        <a onclick="scrollToDiv('.about-course-section')">O kursie</a>
-        <a onclick="scrollToDiv('.about-us-section')">Mentorzy</a>
+    <div class="navigation-links">
+        <a onclick="scrollToDiv('.course-information-container')">O kursie</a>
+        <a onclick="scrollToDiv('.mentors-container')">Mentorzy</a>
         <a onclick="scrollToDiv('.benefits')">Benefity</a>
-        <a onclick="scrollToDiv('.register')">Aplikuj</a>
-        <a onclick="scrollToDiv('.qna-section')">Pytania</a>
+        <a onclick="scrollToDiv('.register-container')">Aplikuj</a>
+        <a onclick="scrollToDiv('.questions-container')">Pytania</a>
     </div>
 </div>
-<script>
-    var navLinks = document.querySelectorAll('.nav-links a');
-    navLinks.forEach(function(link) {
-        link.addEventListener('click', function() {
-            var navCheck = document.getElementById('nav-check');
-            if (navCheck.checked) {
-                navCheck.checked = false;
-            }
-        });
-    });
 
-</script>
 <!-- Slider Zdjęć -->
-<div class="slider">
+<div class="slider-container">
     <div class="slide active">
         <img src="images/slide1.jpg" alt="Slide 1">
     </div>
@@ -59,12 +48,12 @@
 </div>
 
 <!-- O kursie -->
-<div class="about-course-section">
+<div class="course-information-container">
     <h2>O Kursie</h2>
-    <div class="about-course-images">
+    <div class="course-information-images">
         <figure>
-            <img class="about-course-image" src="images/kurs1.png" alt="Course Image 1">
-            <figcaption class="about-course-caption">Kurs złożony będzie z działów, w każdym przygowane są zadania o
+            <img class="course-information-image" src="images/kurs1.png" alt="Course Image 1">
+            <figcaption class="course-information-text">Kurs złożony będzie z działów, w każdym przygowane są zadania o
                 różnym poziomie
                 trudności.
                 Uczestnicy będą mieli określony czas na ukończenie działu, w przeciwnym wypadku będą naliczane punkty
@@ -78,8 +67,8 @@
             </figcaption>
         </figure>
         <figure>
-            <img class="about-course-image" src="images/kurs2.png" alt="Course Image 2">
-            <figcaption class="about-course-caption"> Program kursu:<br>
+            <img class="course-information-image" src="images/kurs2.png" alt="Course Image 2">
+            <figcaption class="course-information-text"> Program kursu:<br>
                 Kurs złożony będzie z działów, w każdym przygowane są zadania o różnym poziomie trudności.
                 Uczestnicy będą mieli określony czas na ukończenie działu, w przeciwnym wypadku będą naliczane punkty
                 karne,
@@ -92,8 +81,8 @@
             </figcaption>
         </figure>
         <figure>
-            <img class="about-course-image" src="images/kurs3.png" alt="Course Image 3">
-            <figcaption class="about-course-caption"> Certyfikat ukończenia:
+            <img class="course-information-image" src="images/kurs3.png" alt="Course Image 3">
+            <figcaption class="course-information-text"> Certyfikat ukończenia:
                 Po zakończeniu kursu uczestnicy otrzymają certyfikat ukończenia, który potwierdzi zdobyte umiejętności i
                 zaangażowanie w naukę Pythona. Certyfikat może stanowić cenny dodatek do CV i zwiększyć szanse na
                 znalezienie
@@ -101,41 +90,53 @@
             </figcaption>
         </figure>
     </div>
-
     <p>
         Wymagania:
         2 rok studiów na kierunkach takich jak: Informatyka lub Informatyka Stosowana na Politechnice Łódzkiej
-        Własny sprzęt do kodowania z zainstalowyanym oprogramowaniem Python oraz edytorem tekstu.
+        Własny sprzęt do kodowania z zainstalowanym oprogramowaniem Python oraz edytorem tekstu.
     </p>
 </div>
+
 <!-- Nasi mentorzy -->
-<div class="about-us-section">
+<div class="mentors-container">
     <h2>Nasi mentorzy</h2>
-    <div class="about-us-images">
+    <div class="mentors-images">
         <figure>
-            <img class="about-us-image" src="images/mentor1.webp" alt="Course Image 1">
-            <figcaption class="about-us-caption"><b>Marcin</b> to doświadczony programista Python. Jego główne obszary ekspertyzy to tworzenie oprogramowania w języku Python oraz zarówno backend, jak i frontend aplikacji. Jest kreatywny i skrupulatny w pracy. Zawsze gotowy do pomocy w rozwiązywaniu problemów i dzielenia się swoją wiedzą programistyczną.</figcaption>
+            <img class="mentors-image" src="images/mentor1.webp" alt="Course Image 1">
+            <figcaption class="mentor-description"><b>Marcin</b> to doświadczony programista Python. Jego główne obszary
+                ekspertyzy to tworzenie oprogramowania w języku Python oraz zarówno backend, jak i frontend aplikacji.
+                Jest kreatywny i skrupulatny w pracy. Zawsze gotowy do pomocy w rozwiązywaniu problemów i dzielenia się
+                swoją wiedzą programistyczną.
+            </figcaption>
         </figure>
         <figure>
-            <img class="about-us-image" src="images/mentor2.webp" alt="Course Image 2">
-            <figcaption class="about-us-caption"><b>Robert</b> jest specjalistą w dziedzinie baz danych. Ma bogate doświadczenie w projektowaniu i tworzeniu baz danych oraz optymalizacji zapytań. W kursie z Pythona pomoże w zrozumieniu sposobu integracji Pythona z bazami danych i udzieli praktycznych wskazówek dotyczących efektywnego korzystania z baz danych.</figcaption>
+            <img class="mentors-image" src="images/mentor2.webp" alt="Course Image 2">
+            <figcaption class="mentor-description"><b>Robert</b> jest specjalistą w dziedzinie baz danych. Ma bogate
+                doświadczenie w projektowaniu i tworzeniu baz danych oraz optymalizacji zapytań. W kursie z Pythona
+                pomoże w zrozumieniu sposobu integracji Pythona z bazami danych i udzieli praktycznych wskazówek
+                dotyczących efektywnego korzystania z baz danych.
+            </figcaption>
         </figure>
         <figure>
-            <img class="about-us-image" src="images/mentor3.webp" alt="Course Image 3">
-            <figcaption class="about-us-caption"><b>Wiktoria</b> to specjalistka w sprzedaży technologii z głębokim zrozumieniem Pythona. Pomocą będzie w tłumaczeniu skomplikowanych koncepcji programowania na przystępne dla początkujących wyjaśnienia. Jej umiejętności komunikacyjne oraz zdolność do budowania relacji sprawią, że kursanci poczują się pewniej i zmotywowani w swojej nauce Pythona.</figcaption>
+            <img class="mentors-image" src="images/mentor3.webp" alt="Course Image 3">
+            <figcaption class="mentor-description"><b>Wiktoria</b> to specjalistka w sprzedaży technologii z głębokim
+                zrozumieniem Pythona. Pomocą będzie w tłumaczeniu skomplikowanych koncepcji programowania na przystępne
+                dla początkujących wyjaśnienia. Jej umiejętności komunikacyjne oraz zdolność do budowania relacji
+                sprawią, że kursanci poczują się pewniej i zmotywowani w swojej nauce Pythona.
+            </figcaption>
         </figure>
     </div>
 </div>
-<!-- Benefity -->
 
-<div class="benefits">
+<!-- Korzyści -->
+<div class="benefits-container">
     <h2>Jakie masz korzyści z kursu?</h2>
-    <div class="benefit-grid">
+    <div class="benefits">
         <div class="benefit">
             <img src="images/ben1.png" alt="Korzyść 1">
             <h3> Doszlifowanie umiejętności</h3>
             <p> Dzięki naszemu kursowi uczestnicy mogą sprawdzić swoje umiejętności
-                i popracować nad pisaniem bardziej optymalnych kodów pod okiem profesjonalnych mentorór </p>
+                i popracować nad pisaniem bardziej optymalnych kodów pod okiem profesjonalnych mentorów </p>
         </div>
         <div class="benefit">
             <img src="images/ben2.png" alt="Korzyść 2">
@@ -158,7 +159,7 @@
         </div>
         <div class="benefit">
             <img src="images/ben5.png" alt="Korzyść 1">
-            <h3> Budowanie potrfolio</h3>
+            <h3> Budowanie portfolio</h3>
             <p> Ukończeniu kursu daje możliwość podpisania umowy z naszymi sponsorami i umożliwia odbycie stażu w ich
                 firmie.</p>
         </div>
@@ -172,19 +173,19 @@
 </div>
 
 <!-- Polecający -->
-<div class="recommend-us-section">
+<div class="recommendations-container">
     <h2>Polecają nas</h2>
-    <div class="recommend-us-images">
+    <div class="recommendations-images">
         <figure>
-            <img class="recommend-us-image" src="images/pol1.png" alt="Course Image 1">
-            <figcaption class="recommend-us-caption">
+            <img class="recommendations-image" src="images/pol1.png" alt="Course Image 1">
+            <figcaption class="recommendations-text">
                 "<i>Zdobyta wiedza z Pythona otwiera drzwi do nieograniczonych możliwości - tworzenia automatycznych
                 skryptów.</i>"<br> - <b> Paweł</b> -
             </figcaption>
         </figure>
         <figure>
-            <img class="recommend-us-image" src="images/pol2.png" alt="Course Image 2">
-            <figcaption class="recommend-us-caption">
+            <img class="recommendations-image" src="images/pol2.png" alt="Course Image 2">
+            <figcaption class="recommendations-text">
                 "<i>Kurs zapewniał równowagę między teorią a praktyką. Natychmiastowe stosowanie wiedzy w różnorodnych
                 projektach pomogło mi zrozumieć,
                 jak przydatne może być programowanie w Pythonie w rzeczywistych zastosowaniach.</i>" <br>-<b> Piotr</b>
@@ -192,8 +193,8 @@
             </figcaption>
         </figure>
         <figure>
-            <img class="recommend-us-image" src="images/pol3.png" alt="Course Image 3">
-            <figcaption class="recommend-us-caption">
+            <img class="recommendations-image" src="images/pol3.png" alt="Course Image 3">
+            <figcaption class="recommendations-text">
                 "<i>Instruktorzy mieli elastyczne podejście. Zawsze byli gotowi odpowiedzieć na pytania i wyjaśnić
                 trudne
                 zagadnienia.</i>" <br> - <b> Szymon </b> -
@@ -203,14 +204,12 @@
 </div>
 
 <!-- Przycisk -->
-
 <div class="button-container">
-    <button class="apply-button" onclick="window.location.href='#aplikuj'">Aplikuj</button>
+    <button class="apply-button" onclick="scrollToDiv('.register-container')">Aplikuj</button>
 </div>
 
-
-<!-- Slider Zdjęć -->
-<div class="slider2">
+<!-- Slider Zdjęć 2 -->
+<div class="slider2-container">
     <div class="slide2 active">
         <img src="images/slide1.jpg" alt="Slide 1">
     </div>
@@ -223,71 +222,63 @@
 </div>
 
 <!-- Pytania -->
-
-<div class="qna">
-    <div class="qna-section">
+<div class="questions-container">
+    <div class="questions">
         <h1>Najczęściej zadawane pytania</h1>
         <br>
         <div class="question">
-            <div class="question-header">
-                <h2>Jak mogę zapisać się na kurs letni z Pythona?</h2>
-            </div>
-            <div class="question-content">
+            <h2>Jak mogę zapisać się na kurs letni z Pythona?</h2>
+            <div class="question-answer">
                 <p>Wystarczy na pasku menu kliknąć "Aplikuj" i wypełnić formularz zgłoszeniowy.</p>
             </div>
         </div>
         <div class="question">
-            <div class="question-header">
-                <h2>Czy będę otrzymywać jakieś materiały do nauki i źródła informacji na temat Pythona?</h2>
-            </div>
-            <div class="question-content">
+            <h2>Czy będę otrzymywać jakieś materiały do nauki i źródła informacji na temat Pythona?</h2>
+            <div class="question-answer">
                 <p>Podczas kursu będą dostarczane materiały, z których uczestnicy mogą korzystać do wypełniania
                     zadań.</p>
             </div>
         </div>
         <div class="question">
-            <div class="question-header">
-                <h2>Czy istnieje certyfikat ukończenia kursu?</h2>
-            </div>
-            <div class="question-content">
+            <h2>Czy istnieje certyfikat ukończenia kursu?</h2>
+            <div class="question-answer">
                 <p><b>Tak</b>, po ukończeniu kursu uczesnicy dostaną certyfikat potwierdzony przez naszych sponsorów i
                     mentorów.</p>
             </div>
         </div>
         <div class="question">
-            <div class="question-header">
-                <h2>Czy kurs jest płatny?</h2>
-            </div>
-            <div class="question-content">
+            <h2>Czy kurs jest płatny?</h2>
+            <div class="question-answer">
                 <p><b>Nie</b>, nasz kurs jest całkowicie bezpłatny.</p>
             </div>
         </div>
         <div class="question">
-            <div class="question-header">
-                <h2>Kiedy będą wyniki kwalifikacji do kursu?</h2>
-            </div>
-            <div class="question-content">
+            <h2>Kiedy będą wyniki kwalifikacji do kursu?</h2>
+            <div class="question-answer">
                 <p>Uczestnicy zostaną powiadomieni 2 tygodnie przed rozpoczęciem kursu o wynikach.</p>
             </div>
         </div>
     </div>
 </div>
 
-<div class="register" id="aplikuj">
+<!-- Formularz Rejestracyjny -->
+<div class="register-container" id="aplikuj">
     <object data="register.html" width="100%" height="100%">
         Twoja przeglądarka nie obsługuje elementu object.
     </object>
 </div>
 
 <!-- Sponsorzy -->
-<div class="sponsors-section">
+<div class="sponsors-container">
     <h2>Sponsorzy</h2>
     <div class="sponsors-images">
         <figure>
-            <img class="sponsors-image" src="images/sponsor1.png" alt="Sponsor Image 1">
+            <img class="sponsors-image" src="images/sponsor1.png"
+                 alt="Sponsor Image 1">
         </figure>
         <figure>
-            <img class="sponsors-image" style="width:auto" src="images/sponsor2.png" alt="Sponsor Image 2">
+            <img class="sponsors-image" style="width:auto" src="images/sponsor2.png"
+                 alt="Sponsor Image 2">
         </figure>
         <figure>
             <img class="sponsors-image" style="width:auto;height: 100px;padding-top: 35px" src="images/sponsor3.png"
@@ -298,20 +289,20 @@
                  alt="Sponsor Image 4">
         </figure>
         <figure>
-            <img class="sponsors-image" style="width:auto" src="images/sponsor5.png" alt="Sponsor Image 5">
+            <img class="sponsors-image" style="width:auto" src="images/sponsor5.png"
+                 alt="Sponsor Image 5">
         </figure>
     </div>
 </div>
 
-
+<!-- Stopka -->
 <div class="footer">
     <div class="container">
         <div class="footer-content">
             <ul class="footer-links">
-                <li><a onclick="scrollToDiv('.nav')">Strona główna</a></li>
-                <li><a onclick="scrollToDiv('.about-us-section')">Mentorzy</a></li>
-                <li><a onclick="scrollToDiv('.benefits')">Oferta</a></li>
-                <!--                <li><a href="#">Kontakt</a></li>-->
+                <li><a onclick="scrollToDiv('.navigation-container')">Strona główna</a></li>
+                <li><a onclick="scrollToDiv('.mentors-container')">Mentorzy</a></li>
+                <li><a onclick="scrollToDiv('.benefits-container')">Oferta</a></li>
             </ul>
             <p class="footer-text">&copy; 2023 Twoja Firma. Wszelkie prawa zastrzeżone.</p>
         </div>
@@ -320,7 +311,9 @@
 
 </body>
 
+<!-- Skrypty -->
 <script src="script/sliders.js"></script>
 <script src="script/divscroller.js"></script>
+<script src="script/navigationclickchecker.js"></script>
 
 </html>

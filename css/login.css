@@ -13,7 +13,6 @@
     src: url(../fonts/Rubik-Light.ttf);
 }
 
-/*root to takie zmienne w css XD*/
 :root {
     --main-color: #1089FF;
     --background-color: #23374D;
@@ -22,34 +21,35 @@
 }
 
 body {
-    overflow:hidden;
+    overflow: hidden;
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(16,137,255);
-    background: -moz-linear-gradient(225deg, rgba(16,137,255,1) 0%, rgba(229,229,229,1) 100%);
-    background: -webkit-linear-gradient(225deg, rgba(16,137,255,1) 0%, rgba(229,229,229,1) 100%);
-    background: linear-gradient(225deg, rgba(16,137,255,1) 0%, rgba(229,229,229,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1089ff",endColorstr="#e5e5e5",GradientType=1);
+    background: rgb(16, 137, 255);
+    background: -moz-linear-gradient(225deg, rgba(16, 137, 255, 1) 0%, rgba(229, 229, 229, 1) 100%);
+    background: -webkit-linear-gradient(225deg, rgba(16, 137, 255, 1) 0%, rgba(229, 229, 229, 1) 100%);
+    background: linear-gradient(225deg, rgba(16, 137, 255, 1) 0%, rgba(229, 229, 229, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1089ff", endColorstr="#e5e5e5", GradientType=1);
     height: 100vh;
     user-select: none;
 }
 
-.left-section {
+.left-container {
     height: 100%;
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(16,137,255);
-    background: -moz-linear-gradient(225deg, rgba(16,137,255,1) 0%, rgba(229,229,229,1) 100%);
-    background: -webkit-linear-gradient(225deg, rgba(16,137,255,1) 0%, rgba(229,229,229,1) 100%);
-    background: linear-gradient(225deg, rgba(16,137,255,1) 0%, rgba(229,229,229,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1089ff",endColorstr="#e5e5e5",GradientType=1);
+    background: rgb(16, 137, 255);
+    background: -moz-linear-gradient(225deg, rgba(16, 137, 255, 1) 0%, rgba(229, 229, 229, 1) 100%);
+    background: -webkit-linear-gradient(225deg, rgba(16, 137, 255, 1) 0%, rgba(229, 229, 229, 1) 100%);
+    background: linear-gradient(225deg, rgba(16, 137, 255, 1) 0%, rgba(229, 229, 229, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1089ff", endColorstr="#e5e5e5", GradientType=1);
     padding: 20px;
 }
+
 .home-link {
     display: flex;
     align-items: center;
@@ -62,26 +62,30 @@ body {
     margin-right: 5px;
     margin-top: -7%;
     color: var(--main-color);
-    font-family: Rubik-Light;
+    font-family: Rubik-Light, serif;
 }
-.container-register .home-link{
-    margin-top: 0%;
+
+.container-register .home-link {
+    margin-top: 0;
 
 }
-.arrow_left{
+
+.arrow_left {
     padding-right: 10px;
     transition: 0.5s;
 }
-.home-link:hover >  .arrow_left {
+
+.home-link:hover > .arrow_left {
     transform: scale(1.5);
-    margin-right:10px;
+    margin-right: 10px;
 }
-.right-section {
+
+.right-container {
     width: 50%;
     position: relative;
-    -webkit-box-shadow: 0px 0px 9px 8px rgba(0, 0, 0, 0.41);
-    -moz-box-shadow: 0px 0px 9px 8px rgba(0, 0, 0, 0.41);
-    box-shadow: 0px 0px 9px 8px rgba(0, 0, 0, 0.41);
+    -webkit-box-shadow: 0 0 9px 8px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 0 0 9px 8px rgba(0, 0, 0, 0.41);
+    box-shadow: 0 0 9px 8px rgba(0, 0, 0, 0.41);
 }
 
 .background-image {
@@ -91,7 +95,7 @@ body {
 }
 
 .background-text {
-    font-family: Rubik-Bold;
+    font-family: Rubik-Bold, serif;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -99,7 +103,7 @@ body {
     text-align: center;
     color: white;
     font-size: 24px;
-    text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 0 9px rgba(0, 0, 0, 0.7);
 }
 
 @keyframes glow_effect {
@@ -107,7 +111,7 @@ body {
         text-shadow: none;
     }
     50% {
-        text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+        text-shadow: 0 0 5px rgba(255, 255, 255, 1);
     }
     100% {
         text-shadow: none;
@@ -121,11 +125,9 @@ body {
 .container {
     background-color: #fff;
     border-radius: 15px;
-    padding: 20px;
     width: 100%;
     max-width: 400px;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding: 50px 20px;
     margin: 0 auto;
     transition: 0.75s ease;
 }
@@ -142,18 +144,19 @@ body {
 
 .container:hover {
     margin-top: -1%;
-    -webkit-box-shadow: 0px 0px 41px 2px rgba(58, 89, 119, 1);
-    -moz-box-shadow: 0px 0px 41px 2px rgba(58, 89, 119, 1);
-    box-shadow: 0px 0px 41px 2px rgba(58, 89, 119, 1);
+    -webkit-box-shadow: 0 0 41px 2px rgba(58, 89, 119, 1);
+    -moz-box-shadow: 0 0 41px 2px rgba(58, 89, 119, 1);
+    box-shadow: 0 0 41px 2px rgba(58, 89, 119, 1);
 }
+
 .gender-options label {
     display: inline-block;
     margin-right: 10px;
 }
 
 .container h2 {
-    text-shadow: 0px 0px 9px rgba(196, 196, 204, 1);
-    font-family: Rubik-Bold;
+    text-shadow: 0 0 9px rgba(196, 196, 204, 1);
+    font-family: Rubik-Bold, serif;
     font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
@@ -169,7 +172,7 @@ label {
     font-weight: bold;
     margin-bottom: 5px;
     color: var(--main-color);
-    font-family: Rubik-Light;
+    font-family: Rubik-Light, serif;
 }
 
 input[type="text"],
@@ -181,7 +184,7 @@ input[type="password"] {
 }
 
 .error-message {
-    font-family: Rubik-Light;
+    font-family: Rubik-Light, serif;
     color: red;
     margin-top: 5px;
 }
@@ -189,7 +192,7 @@ input[type="password"] {
 .password-strength {
     margin-top: 5px;
     font-size: 12px;
-    font-family: Rubik-Light;
+    font-family: Rubik-Light, serif;
     color: var(--main-color);
 }
 
@@ -217,9 +220,10 @@ input[type="password"] {
     border: 0;
     transition: 0.5s ease-in;
     cursor: pointer;
-    font-family: Rubik-Regular;
+    font-family: Rubik-Regular, serif;
 }
-.left-section a{
+
+.left-container a {
     text-decoration: none;
 }
 
@@ -237,20 +241,19 @@ input[type="password"] {
 }
 
 @media (max-width: 768px) {
-    .left-section,
-    .right-section {
+    .left-container,
+    .right-container {
         width: 100%;
     }
 
-    .left-section {
+    .left-container {
         height: auto;
         padding: 20px;
     }
 }
 
-/*768px dla tabletow*/
 @media only screen and (max-width: 900px) {
-    .right-section {
+    .right-container {
         display: none;
     }
 }

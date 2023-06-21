@@ -13,7 +13,6 @@
     src: url(../fonts/Rubik-Regular.ttf);
 }
 
-/*root to takie zmienne w css XD*/
 :root {
     --main-color: #1089FF;
     --background-color: #23374D;
@@ -51,7 +50,7 @@ p {
     font-family: Rubik-Bold, sans-serif;
 }
 
-.nav {
+.navigation-container {
     padding-top: 0;
     padding-bottom: 0;
     position: fixed;
@@ -64,49 +63,49 @@ p {
     text-align: left !important;
 }
 
-.nav img {
+.navigation-container img {
     height: 100%;
 }
 
-.nav > .nav-header {
+.navigation-container > .nav-header {
     display: inline;
 }
 
-.nav > .nav-btn {
+.navigation-container > .navigation-buttons {
     display: none;
 }
 
-.nav > .nav-links {
+.navigation-container > .navigation-links {
     display: inline;
     float: right;
     font-size: 18px;
 }
 
-.nav > .nav-links > a {
+.navigation-container > .navigation-links > a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
     color: #efefef;
 }
 
-.nav > .nav-links > a:hover {
+.navigation-container > .navigation-links > a:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.nav > #nav-check {
+.navigation-container > #navigation-click-check {
     height: 50px;
     display: none;
 }
 
 @media (max-width: 635px) {
-    .nav > .nav-btn {
+    .navigation-container > .navigation-buttons {
         display: inline-block;
         position: absolute;
-        right: 0px;
-        top: 0px;
+        right: 0;
+        top: 0;
     }
 
-    .nav > .nav-btn > label {
+    .navigation-container > .navigation-buttons > label {
         display: inline-block;
         width: 50px;
         height: 50px;
@@ -114,44 +113,41 @@ p {
     }
 
 
-    .nav > .nav-btn > label > span {
+    .navigation-container > .navigation-buttons > label > span {
         display: block;
         width: 25px;
         height: 10px;
         border-top: 2px solid #eee;
     }
 
-    .nav > .nav-links {
+    .navigation-container > .navigation-links {
         overflow: hidden;
         position: absolute;
         display: block;
         width: 100%;
         background-color: var(--background-color);
-        height: 0px;
+        height: 0;
         transition: all 0.3s ease-in;
-        overflow-y: hidden;
         top: 50px;
-        left: 0px;
+        left: 0;
     }
 
-    .nav > .nav-links > a {
+    .navigation-container > .navigation-links > a {
         display: block;
         width: 100%;
     }
 
-    .nav > #nav-check:not(:checked) ~ .nav-links {
-        height: 0px;
+    .navigation-container > #navigation-click-check:not(:checked) ~ .navigation-links {
+        height: 0;
     }
 
-    .nav > #nav-check:checked ~ .nav-links {
+    .navigation-container > #navigation-click-check:checked ~ .navigation-links {
         height: calc(100vh - 50px);
         overflow-y: auto;
     }
 }
 
-
-/* Stylowanie slidera */
-.slider {
+.slider-container {
     margin-top: 50px;
     width: 100%;
     height: 400px;
@@ -184,35 +180,33 @@ p {
 }
 
 
-.about-course-section {
-    background-color: var(--bgcolor1); /* tło */
+.course-information-container {
+    background-color: var(--bgcolor1);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /*margin-top: 20px;*/
     text-align: center;
 }
 
-.about-course-section h2 {
+.course-information-container h2 {
     font-family: Rubik-Bold, sans-serif;
     text-align: center;
     color: white;
     font-size: 36px;
 }
 
-.about-course-images {
+.course-information-images {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
-.about-course-image {
+.course-information-image {
     filter: invert(1);
     width: 200px;
     height: 200px;
-    /*border-radius: 50%;*/
     object-fit: cover;
     margin: 0 10px;
 }
@@ -222,14 +216,14 @@ p {
     font-size: 18px;
 }
 
-.about-course-caption {
+.course-information-text {
     font-size: 20px;
-    color:white;
-    font-family: Rubik-Regular;
+    color: white;
+    font-family: Rubik-Regular, serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-shadow: 0px 0px 7px rgba(66, 68, 90, 1);
+    text-shadow: 0 0 7px rgba(66, 68, 90, 1);
 }
 
 .footer {
@@ -279,36 +273,34 @@ p {
     margin-top: 15px;
 }
 
-.about-us-section {
-    background: rgb(103,157,202);
-    background: -moz-linear-gradient(180deg, rgba(103,157,202,1) 90%, rgba(92,146,191,1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(103,157,202,1) 90%, rgba(92,146,191,1) 100%);
-    background: linear-gradient(180deg, rgba(103,157,202,1) 90%, rgba(92,146,191,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#679dca",endColorstr="#5c92bf",GradientType=1);
-
+.mentors-container {
+    background: rgb(103, 157, 202);
+    background: -moz-linear-gradient(180deg, rgba(103, 157, 202, 1) 90%, rgba(92, 146, 191, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(103, 157, 202, 1) 90%, rgba(92, 146, 191, 1) 100%);
+    background: linear-gradient(180deg, rgba(103, 157, 202, 1) 90%, rgba(92, 146, 191, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#679dca", endColorstr="#5c92bf", GradientType=1);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /*margin-top: 20px;*/
     text-align: center;
 }
 
-.about-us-section h2 {
+.mentors-container h2 {
     font-family: Rubik-Bold, sans-serif;
     text-align: center;
     font-size: 36px;
     color: var(--background-color);
 }
 
-.about-us-images {
+.mentors-images {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
-.about-us-image {
+.mentors-image {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -321,42 +313,40 @@ p {
     font-size: 18px;
 }
 
-.about-us-caption {
+.mentor-description {
     margin-top: 10px;
     font-size: 20px;
-    font-family: Rubik-Regular;
+    font-family: Rubik-Regular, serif;
 }
 
-.recommend-us-section {
-    background: rgb(115,168,210);
-    background: -moz-linear-gradient(360deg, rgba(115,168,210,1) 90%, rgba(92,146,191,1) 100%);
-    background: -webkit-linear-gradient(360deg, rgba(115,168,210,1) 90%, rgba(92,146,191,1) 100%);
-    background: linear-gradient(360deg, rgba(115,168,210,1) 90%, rgba(92,146,191,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#73a8d2",endColorstr="#5c92bf",GradientType=1);
-
+.recommendations-container {
+    background: rgb(115, 168, 210);
+    background: -moz-linear-gradient(360deg, rgba(115, 168, 210, 1) 90%, rgba(92, 146, 191, 1) 100%);
+    background: -webkit-linear-gradient(360deg, rgba(115, 168, 210, 1) 90%, rgba(92, 146, 191, 1) 100%);
+    background: linear-gradient(360deg, rgba(115, 168, 210, 1) 90%, rgba(92, 146, 191, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#73a8d2", endColorstr="#5c92bf", GradientType=1);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /*margin-top: 20px;*/
     text-align: center;
 }
 
-.recommend-us-section h2 {
+.recommendations-container h2 {
     font-family: Rubik-Bold, sans-serif;
     text-align: center;
     font-size: 36px;
     color: var(--background-color);
 }
 
-.recommend-us-images {
+.recommendations-images {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
-.recommend-us-image {
+.recommendations-image {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -369,25 +359,24 @@ p {
     font-size: 18px;
 }
 
-.recommend-us-caption {
+.recommendations-text {
     font-family: Rubik-Regular, sans-serif;
     margin-top: 10px;
     font-size: 20px;
 }
 
-.sponsors-section {
-    background-color: var(--bgcolor6); /* tło */
+.sponsors-container {
+    background-color: var(--bgcolor6);
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    /*margin-top: 20px;*/
     text-align: center;
 }
 
-.sponsors-section h2 {
+.sponsors-container h2 {
     font-family: Rubik-Bold, sans-serif;
     text-align: center;
     font-size: 36px;
@@ -409,19 +398,19 @@ p {
     margin: 0 10px;
 }
 
-.benefits {
-    background-color: var(--bgcolor2); /* tło */
+.benefits-container {
+    background-color: var(--bgcolor2);
     text-align: center;
 }
 
-.benefits h2 {
+.benefits-container h2 {
     font-family: Rubik-Bold, sans-serif;
     text-align: center;
     font-size: 36px;
     color: var(--background-color);
 }
 
-.benefit-grid {
+.benefits {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -441,8 +430,7 @@ p {
     margin: 0 auto;
 }
 
-/* Stylowanie slidera */
-.slider2 {
+.slider2-container {
     width: 100%;
     height: 400px;
     overflow: hidden;
@@ -473,18 +461,16 @@ p {
     transition: transform 0.5s ease-in-out;
 }
 
-
-/*768px dla tabletow*/
 @media only screen and (max-width: 768px) {
-    .slider {
+    .slider-container {
         height: 200px;
     }
 
-    .about-course-images {
+    .course-information-images {
         flex-wrap: wrap;
     }
 
-    .about-course-image {
+    .course-information-image {
         margin-bottom: 10px;
     }
 
@@ -492,11 +478,11 @@ p {
         text-align: center;
     }
 
-    .recommend-us-images {
+    .recommendations-images {
         flex-wrap: wrap;
     }
 
-    .recommend-us-image {
+    .recommendations-image {
         margin-bottom: 10px;
     }
 
@@ -504,11 +490,11 @@ p {
         text-align: center;
     }
 
-    .about-us-images {
+    .mentors-images {
         flex-wrap: wrap;
     }
 
-    .about-us-image {
+    .mentors-image {
         margin-bottom: 10px;
     }
 
@@ -524,42 +510,42 @@ p {
         margin-bottom: 10px;
     }
 
-    .benefit-grid {
+    .benefits {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-.qna {
+.questions-container {
     max-width: 100%;
-    background-color: var(--bgcolor5); /* tło */
+    background-color: var(--bgcolor5);
 }
 
-.qna-section {
+.questions {
     max-width: 600px;
     margin: 0 auto;
-    /*padding: 20px;*/
 }
 
-.qna-section h2 {
+.questions h2 {
     text-align: center;
 }
 
 .question {
-    /*margin-bottom: 20px;*/
     padding-bottom: 20px;
 }
-.question-content p{
-    font-family: Rubik-Regular !important;
+
+.question-answer p {
+    font-family: Rubik-Regular, serif !important;
 }
-.qna-section h3 {
+
+.questions h3 {
     margin-bottom: 10px;
 }
 
-.qna-section p {
+.questions p {
     margin: 0;
 }
 
-.qna-section h1, h2 {
+.questions h1, h2 {
     margin: 0;
     font-family: Rubik-Bold, sans-serif;
     text-align: center;
@@ -567,7 +553,7 @@ p {
     color: var(--background-color);
 }
 
-.qna-section h2 {
+.questions h2 {
     font-size: 24px;
 }
 
@@ -599,42 +585,44 @@ p {
     top: 1px;
 }
 
-.about-course-section {
+.course-information-container {
     display: flex;
     flex-direction: column;
 }
-.about-course-section p{
+
+.course-information-container p {
     color: darkred;
 }
-.about-course-images {
+
+.course-information-images {
     display: flex;
     flex-wrap: wrap;
 }
 
-.about-course-section figure {
+.course-information-container figure {
     display: flex;
     flex-basis: 100%;
 }
 
-.about-course-section figure:nth-child(odd) {
+.course-information-container figure:nth-child(odd) {
     flex-direction: row;
 }
 
-.about-course-section figure:nth-child(even) {
+.course-information-container figure:nth-child(even) {
     flex-direction: row-reverse;
 }
 
 @media (max-width: 800px) {
-    .about-course-section figure {
+    .course-information-container figure {
         flex-direction: column !important;
     }
 
-    .about-course-section figure img,
-    .about-course-section figcaption {
+    .course-information-container figure img,
+    .course-information-container figcaption {
         width: 100%;
     }
 
-    .about-course-section figure img {
+    .course-information-container figure img {
         display: block;
         margin: 0 auto;
         width: 200px;
@@ -643,8 +631,8 @@ p {
     }
 }
 
-.register{
+.register-container {
     height: 60em;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
 }

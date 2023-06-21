@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="css/login.css"/>
 </head>
 <body>
-<div class="right-section">
+
+<!-- Prawy Kontener -->
+<div class="right-container">
     <img class="background-image" src="images/register_background_image.webp" alt="Background Image">
     <div class="background-text">
         <h1>Stań się <span class="glow_effect">programistyczną</span> z prawdziwego zdarzenia!</h1>
     </div>
 </div>
-<div class="left-section">
+
+<!-- Lewy Kontener -->
+<div class="left-container">
     <div class="container container-register">
         <h2>Przygoda czeka!</h2>
         <form id="login-form">
@@ -59,17 +63,20 @@
                 <input type="text" id="university" required>
             </div>
             <button type="submit" class="btn btn-login">Rozpocznij naukę!</button>
-            <a href="login.html"><button type="button" class="btn btn-register">Masz już konto? Zaloguj się!</button></a>
+            <a href="login.html">
+                <button type="button" class="btn btn-register">Masz już konto? Zaloguj się!</button>
+            </a>
         </form>
     </div>
-
-    <script>
-        var dobInput = document.getElementById("dob");
-        var currentDate = new Date().toISOString().split("T")[0];
-        dobInput.setAttribute("max", currentDate);
-    </script>
-
 </div>
+
+<!-- Skrypty -->
 <script src="script/emailandpasswordvalidation.js"></script>
+<script>
+    let dobInput = document.getElementById("dob");
+    let currentDate = new Date().toISOString().split("T")[0];
+    dobInput.setAttribute("max", currentDate);
+</script>
+
 </body>
 </html>
