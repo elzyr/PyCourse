@@ -183,7 +183,7 @@ p {
 }
 
 
-.about-course-section {
+.course-information-container {
     background-color: var(--bgcolor1); /* tło */
     display: flex;
     justify-content: center;
@@ -193,21 +193,21 @@ p {
     text-align: center;
 }
 
-.about-course-section h2 {
+.course-information-container h2 {
     font-family: Rubik-Bold, sans-serif;
     text-align: center;
     color: white;
     font-size: 36px;
 }
 
-.about-course-images {
+.course-information-images {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
-.about-course-image {
+.course-information-image {
     filter: invert(1);
     width: 200px;
     height: 200px;
@@ -479,11 +479,11 @@ p {
         height: 200px;
     }
 
-    .about-course-images {
+    .course-information-images {
         flex-wrap: wrap;
     }
 
-    .about-course-image {
+    .course-information-image {
         margin-bottom: 10px;
     }
 
@@ -598,42 +598,42 @@ p {
     top: 1px;
 }
 
-.about-course-section {
+.course-information-container {
     display: flex;
     flex-direction: column;
 }
-.about-course-section p{
+.course-information-container p{
     color: darkred;
 }
-.about-course-images {
+.course-information-images {
     display: flex;
     flex-wrap: wrap;
 }
 
-.about-course-section figure {
+.course-information-container figure {
     display: flex;
     flex-basis: 100%;
 }
 
-.about-course-section figure:nth-child(odd) {
+.course-information-container figure:nth-child(odd) {
     flex-direction: row;
 }
 
-.about-course-section figure:nth-child(even) {
+.course-information-container figure:nth-child(even) {
     flex-direction: row-reverse;
 }
 
 @media (max-width: 800px) {
-    .about-course-section figure {
+    .course-information-container figure {
         flex-direction: column !important;
     }
 
-    .about-course-section figure img,
-    .about-course-section figcaption {
+    .course-information-container figure img,
+    .course-information-container figcaption {
         width: 100%;
     }
 
-    .about-course-section figure img {
+    .course-information-container figure img {
         display: block;
         margin: 0 auto;
         width: 200px;
