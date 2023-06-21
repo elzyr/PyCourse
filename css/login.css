@@ -62,7 +62,7 @@ body {
     margin-right: 5px;
     margin-top: -7%;
     color: var(--main-color);
-    font-family: Rubik-Light;
+    font-family: Rubik-Light, serif;
 }
 
 .container-register .home-link {
@@ -95,7 +95,7 @@ body {
 }
 
 .background-text {
-    font-family: Rubik-Bold;
+    font-family: Rubik-Bold, serif;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -156,7 +156,7 @@ body {
 
 .container h2 {
     text-shadow: 0 0 9px rgba(196, 196, 204, 1);
-    font-family: Rubik-Bold;
+    font-family: Rubik-Bold, serif;
     font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
@@ -172,7 +172,7 @@ label {
     font-weight: bold;
     margin-bottom: 5px;
     color: var(--main-color);
-    font-family: Rubik-Light;
+    font-family: Rubik-Light, serif;
 }
 
 input[type="text"],
@@ -184,7 +184,7 @@ input[type="password"] {
 }
 
 .error-message {
-    font-family: Rubik-Light;
+    font-family: Rubik-Light, serif;
     color: red;
     margin-top: 5px;
 }
@@ -192,7 +192,7 @@ input[type="password"] {
 .password-strength {
     margin-top: 5px;
     font-size: 12px;
-    font-family: Rubik-Light;
+    font-family: Rubik-Light, serif;
     color: var(--main-color);
 }
 
@@ -220,7 +220,7 @@ input[type="password"] {
     border: 0;
     transition: 0.5s ease-in;
     cursor: pointer;
-    font-family: Rubik-Regular;
+    font-family: Rubik-Regular, serif;
 }
 
 .left-container a {
