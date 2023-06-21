@@ -278,7 +278,7 @@ p {
     margin-top: 15px;
 }
 
-.mentors-section {
+.mentors-container {
     background: rgb(103,157,202);
     background: -moz-linear-gradient(180deg, rgba(103,157,202,1) 90%, rgba(92,146,191,1) 100%);
     background: -webkit-linear-gradient(180deg, rgba(103,157,202,1) 90%, rgba(92,146,191,1) 100%);
@@ -293,7 +293,7 @@ p {
     text-align: center;
 }
 
-.mentors-section h2 {
+.mentors-container h2 {
     font-family: Rubik-Bold, sans-serif;
     text-align: center;
     font-size: 36px;
@@ -528,18 +528,18 @@ p {
     }
 }
 
-.qna {
+.questions-container {
     max-width: 100%;
     background-color: var(--bgcolor5); /* tło */
 }
 
-.qna-section {
+.questions {
     max-width: 600px;
     margin: 0 auto;
     /*padding: 20px;*/
 }
 
-.qna-section h2 {
+.questions h2 {
     text-align: center;
 }
 
@@ -547,18 +547,18 @@ p {
     /*margin-bottom: 20px;*/
     padding-bottom: 20px;
 }
-.question-content p{
+.question-answer p{
     font-family: Rubik-Regular !important;
 }
-.qna-section h3 {
+.questions h3 {
     margin-bottom: 10px;
 }
 
-.qna-section p {
+.questions p {
     margin: 0;
 }
 
-.qna-section h1, h2 {
+.questions h1, h2 {
     margin: 0;
     font-family: Rubik-Bold, sans-serif;
     text-align: center;
@@ -566,7 +566,7 @@ p {
     color: var(--background-color);
 }
 
-.qna-section h2 {
+.questions h2 {
     font-size: 24px;
 }
 
@@ -642,7 +642,7 @@ p {
     }
 }
 
-.register-section{
+.register-container{
     height: 60em;
     padding-top: 0px;
     padding-bottom: 0px;
