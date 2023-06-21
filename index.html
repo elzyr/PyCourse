@@ -29,22 +29,11 @@
         <a onclick="scrollToDiv('.about-course-section')">O kursie</a>
         <a onclick="scrollToDiv('.about-us-section')">Mentorzy</a>
         <a onclick="scrollToDiv('.benefits')">Benefity</a>
-        <a onclick="scrollToDiv('.register')">Aplikuj</a>
+        <a onclick="scrollToDiv('.register-section')">Aplikuj</a>
         <a onclick="scrollToDiv('.qna-section')">Pytania</a>
     </div>
 </div>
 
-<script>
-    var navLinks = document.querySelectorAll('.navigation-links a');
-    navLinks.forEach(function (link) {
-        link.addEventListener('click', function () {
-            var navCheck = document.getElementById('navigation-click-check');
-            if (navCheck.checked) {
-                navCheck.checked = false;
-            }
-        });
-    });
-</script>
 <!-- Slider Zdjęć -->
 <div class="slider">
     <div class="slide active">
@@ -334,5 +323,5 @@
 
 <script src="script/sliders.js"></script>
 <script src="script/divscroller.js"></script>
-
+<script src="script/navigationclickchecker.js"></script>
 </html>
