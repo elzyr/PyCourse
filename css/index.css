@@ -219,7 +219,7 @@ p {
 .course-information-text {
     font-size: 20px;
     color: white;
-    font-family: Rubik-Regular;
+    font-family: Rubik-Regular, serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -279,7 +279,6 @@ p {
     background: -webkit-linear-gradient(180deg, rgba(103, 157, 202, 1) 90%, rgba(92, 146, 191, 1) 100%);
     background: linear-gradient(180deg, rgba(103, 157, 202, 1) 90%, rgba(92, 146, 191, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#679dca", endColorstr="#5c92bf", GradientType=1);
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,7 +316,7 @@ p {
 .mentor-description {
     margin-top: 10px;
     font-size: 20px;
-    font-family: Rubik-Regular;
+    font-family: Rubik-Regular, serif;
 }
 
 .recommendations-container {
@@ -326,12 +325,10 @@ p {
     background: -webkit-linear-gradient(360deg, rgba(115, 168, 210, 1) 90%, rgba(92, 146, 191, 1) 100%);
     background: linear-gradient(360deg, rgba(115, 168, 210, 1) 90%, rgba(92, 146, 191, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#73a8d2", endColorstr="#5c92bf", GradientType=1);
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /*margin-top: 20px;*/
     text-align: center;
 }
 
@@ -464,8 +461,6 @@ p {
     transition: transform 0.5s ease-in-out;
 }
 
-
-/*768px dla tabletow*/
 @media only screen and (max-width: 768px) {
     .slider-container {
         height: 200px;
@@ -539,7 +534,7 @@ p {
 }
 
 .question-answer p {
-    font-family: Rubik-Regular !important;
+    font-family: Rubik-Regular, serif !important;
 }
 
 .questions h3 {

@@ -36,7 +36,7 @@ body {
     user-select: none;
 }
 
-.left-section {
+.left-container {
     height: 100%;
     width: 50%;
     display: flex;
@@ -80,7 +80,7 @@ body {
     margin-right: 10px;
 }
 
-.right-section {
+.right-container {
     width: 50%;
     position: relative;
     -webkit-box-shadow: 0 0 9px 8px rgba(0, 0, 0, 0.41);
@@ -223,7 +223,7 @@ input[type="password"] {
     font-family: Rubik-Regular;
 }
 
-.left-section a {
+.left-container a {
     text-decoration: none;
 }
 
@@ -241,20 +241,19 @@ input[type="password"] {
 }
 
 @media (max-width: 768px) {
-    .left-section,
-    .right-section {
+    .left-container,
+    .right-container {
         width: 100%;
     }
 
-    .left-section {
+    .left-container {
         height: auto;
         padding: 20px;
     }
 }
 
-/* 768px dla tabletów */
 @media only screen and (max-width: 900px) {
-    .right-section {
+    .right-container {
         display: none;
     }
 }
