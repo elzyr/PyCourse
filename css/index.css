@@ -150,7 +150,7 @@ p {
 
 
 /* Stylowanie slidera */
-.slider {
+.slider-container {
     margin-top: 50px;
     width: 100%;
     height: 400px;
@@ -475,7 +475,7 @@ p {
 
 /*768px dla tabletow*/
 @media only screen and (max-width: 768px) {
-    .slider {
+    .slider-container {
         height: 200px;
     }
 
