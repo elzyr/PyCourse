@@ -10,22 +10,22 @@
 </head>
 <body>
 
-<div class="nav">
-    <input type="checkbox" id="nav-check">
+<!-- Pasek Nawigacyjny -->
+<div class="navigation-container">
+    <input type="checkbox" id="navigation-click-check">
     <div class="nav-header">
-        <a class="logo" href="#home">
+        <a class="logo">
             <img src="images/logo.png" alt="Logo">
         </a>
     </div>
-    <div class="nav-btn">
-        <label for="nav-check">
+    <div class="navigation-buttons">
+        <label for="navigation-click-check">
             <span></span>
             <span></span>
             <span></span>
         </label>
     </div>
-
-    <div class="nav-links">
+    <div class="navigation-links">
         <a onclick="scrollToDiv('.about-course-section')">O kursie</a>
         <a onclick="scrollToDiv('.about-us-section')">Mentorzy</a>
         <a onclick="scrollToDiv('.benefits')">Benefity</a>
@@ -33,17 +33,17 @@
         <a onclick="scrollToDiv('.qna-section')">Pytania</a>
     </div>
 </div>
+
 <script>
-    var navLinks = document.querySelectorAll('.nav-links a');
+    var navLinks = document.querySelectorAll('.navigation-links a');
     navLinks.forEach(function (link) {
         link.addEventListener('click', function () {
-            var navCheck = document.getElementById('nav-check');
+            var navCheck = document.getElementById('navigation-click-check');
             if (navCheck.checked) {
                 navCheck.checked = false;
             }
         });
     });
-
 </script>
 <!-- Slider Zdjęć -->
 <div class="slider">

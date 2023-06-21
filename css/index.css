@@ -50,7 +50,7 @@ p {
     font-family: Rubik-Bold, sans-serif;
 }
 
-.nav {
+.navigation-container {
     padding-top: 0;
     padding-bottom: 0;
     position: fixed;
@@ -63,49 +63,49 @@ p {
     text-align: left !important;
 }
 
-.nav img {
+.navigation-container img {
     height: 100%;
 }
 
-.nav > .nav-header {
+.navigation-container > .nav-header {
     display: inline;
 }
 
-.nav > .nav-btn {
+.navigation-container > .navigation-buttons {
     display: none;
 }
 
-.nav > .nav-links {
+.navigation-container > .navigation-links {
     display: inline;
     float: right;
     font-size: 18px;
 }
 
-.nav > .nav-links > a {
+.navigation-container > .navigation-links > a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
     color: #efefef;
 }
 
-.nav > .nav-links > a:hover {
+.navigation-container > .navigation-links > a:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.nav > #nav-check {
+.navigation-container > #navigation-click-check {
     height: 50px;
     display: none;
 }
 
 @media (max-width: 635px) {
-    .nav > .nav-btn {
+    .navigation-container > .navigation-buttons {
         display: inline-block;
         position: absolute;
         right: 0px;
         top: 0px;
     }
 
-    .nav > .nav-btn > label {
+    .navigation-container > .navigation-buttons > label {
         display: inline-block;
         width: 50px;
         height: 50px;
@@ -113,14 +113,14 @@ p {
     }
 
 
-    .nav > .nav-btn > label > span {
+    .navigation-container > .navigation-buttons > label > span {
         display: block;
         width: 25px;
         height: 10px;
         border-top: 2px solid #eee;
     }
 
-    .nav > .nav-links {
+    .navigation-container > .navigation-links {
         overflow: hidden;
         position: absolute;
         display: block;
@@ -133,16 +133,16 @@ p {
         left: 0px;
     }
 
-    .nav > .nav-links > a {
+    .navigation-container > .navigation-links > a {
         display: block;
         width: 100%;
     }
 
-    .nav > #nav-check:not(:checked) ~ .nav-links {
+    .navigation-container > #navigation-click-check:not(:checked) ~ .navigation-links {
         height: 0px;
     }
 
-    .nav > #nav-check:checked ~ .nav-links {
+    .navigation-container > #navigation-click-check:checked ~ .navigation-links {
         height: calc(100vh - 50px);
         overflow-y: auto;
     }
