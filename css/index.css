@@ -374,7 +374,7 @@ p {
     font-size: 20px;
 }
 
-.sponsors-section {
+.sponsors-container {
     background-color: var(--bgcolor6); /* tło */
 
     display: flex;
@@ -386,7 +386,7 @@ p {
     text-align: center;
 }
 
-.sponsors-section h2 {
+.sponsors-container h2 {
     font-family: Rubik-Bold, sans-serif;
     text-align: center;
     font-size: 36px;
