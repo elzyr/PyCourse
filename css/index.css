@@ -278,7 +278,7 @@ p {
     margin-top: 15px;
 }
 
-.about-us-section {
+.mentors-section {
     background: rgb(103,157,202);
     background: -moz-linear-gradient(180deg, rgba(103,157,202,1) 90%, rgba(92,146,191,1) 100%);
     background: -webkit-linear-gradient(180deg, rgba(103,157,202,1) 90%, rgba(92,146,191,1) 100%);
@@ -293,21 +293,21 @@ p {
     text-align: center;
 }
 
-.about-us-section h2 {
+.mentors-section h2 {
     font-family: Rubik-Bold, sans-serif;
     text-align: center;
     font-size: 36px;
     color: var(--background-color);
 }
 
-.about-us-images {
+.mentors-images {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
-.about-us-image {
+.mentors-image {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -320,7 +320,7 @@ p {
     font-size: 18px;
 }
 
-.about-us-caption {
+.mentor-description {
     margin-top: 10px;
     font-size: 20px;
     font-family: Rubik-Regular;
@@ -503,11 +503,11 @@ p {
         text-align: center;
     }
 
-    .about-us-images {
+    .mentors-images {
         flex-wrap: wrap;
     }
 
-    .about-us-image {
+    .mentors-image {
         margin-bottom: 10px;
     }
 
