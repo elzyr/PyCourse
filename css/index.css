@@ -13,7 +13,6 @@
     src: url(../fonts/Rubik-Regular.ttf);
 }
 
-/*root to takie zmienne w css XD*/
 :root {
     --main-color: #1089FF;
     --background-color: #23374D;
@@ -643,7 +642,7 @@ p {
     }
 }
 
-.register{
+.register-section{
     height: 60em;
     padding-top: 0px;
     padding-bottom: 0px;
